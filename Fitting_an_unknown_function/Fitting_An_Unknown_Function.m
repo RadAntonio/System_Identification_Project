@@ -152,12 +152,12 @@ title("Validation set");
 %% APROXIMAREA VALIDARE
 figure
 surf(valx1, valx2, YHAT);
-title("Our aproximation for the validation set");
+title("My aproximation for the validation set");
 %% APROXIMAREA IDENTIFICARE
 figure
 YHATID = reshape(YhatIDFinal, 41, 41);
 surf(x1, x2, YHATID);
-title("Our aproximation for the identification set");
+title("My aproximation for the identification set");
 %% VALIDAREA SI APROXIMAREA PE ACELASI GRAFIC
 YHAT = reshape(YhatFinal, 31, 31);
 figure
