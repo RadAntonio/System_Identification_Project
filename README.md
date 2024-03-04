@@ -1,6 +1,6 @@
 # System_Identification_Project
 
-## Fitting an unknown function
+##  Part 1: Fitting an unknown function
 ## Overview 
 
 The task involves developing a polynomial approximator for a nonlinear static function f, given a dataset of input-output pairs corrupted by additive zero-mean Gaussian noise. The function has two input variables and one output variable. The training and validation datasets are provided as MATLAB data files, each containing a structure with grid coordinates for inputs and corresponding outputs. The polynomial approximator g is of configurable degree m, and the task is to find the optimal parameter vector θ such that g(x) best matches f(x) in a least-squares sense. Linear regression is used to find θ, considering that g is linear in the parameters.
@@ -30,17 +30,19 @@ The task involves developing a polynomial approximator for a nonlinear static fu
    ```
 4. Run the project
 
-## Nonlinear ARX Identification
+## Part 2: Nonlinear ARX Identification
 ## Overview 
 
 The task involves developing a black-box model for an unknown dynamic system with one input and one output. The system's dynamics are nonlinear, and the order of the dynamics is not larger than three. The output may also be affected by noise. A polynomial nonlinear ARX model is chosen for modeling, where the input-output relationship is represented by a polynomial function of delayed inputs and outputs.
 
 ## Preview
 
-#### Mean Squared Error Plots
-![The Plots](assets/MSEplots.png)
 #### Prediction and simulation with the smallest MSE for both identification and simulation dataset
 ![The Plots](assets/BestCases.png)
+
+#### Mean Squared Error Plots
+![The Plots](assets/MSEplots.png)
+
 
 ## Getting Started
 
